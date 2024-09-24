@@ -4,11 +4,18 @@ import { EmployeeFormComponent } from '../employee-form/employee-form.component'
 import { Employee } from '../employee';
 import { EmployeeService } from '../employee.service';
 import { MatCardModule } from '@angular/material/card';
+import { CommonModule } from '@angular/common';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @Component({
   selector: 'app-edit-employee',
   standalone: true,
-  imports: [EmployeeFormComponent, MatCardModule],
+  imports: [EmployeeFormComponent, MatCardModule,
+    CommonModule,
+    MatFormFieldModule,
+    MatInputModule
+  ],
   templateUrl: './edit-employee.component.html',
   styleUrls: ['./edit-employee.component.css'], 
 })
