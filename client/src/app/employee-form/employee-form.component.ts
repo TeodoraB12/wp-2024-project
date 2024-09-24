@@ -1,11 +1,20 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
 import { Employee } from '../employee';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-employee-form',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRadioModule,
+    MatButtonModule,
+  ],
   templateUrl: './employee-form.component.html',
   styleUrls: ['./employee-form.component.css'],
 })
