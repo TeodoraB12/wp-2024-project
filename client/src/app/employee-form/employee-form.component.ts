@@ -5,12 +5,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-employee-form',
   standalone: true,
   imports: [ReactiveFormsModule,
     MatFormFieldModule,
+    CommonModule,
     MatInputModule,
     MatRadioModule,
     MatButtonModule,
