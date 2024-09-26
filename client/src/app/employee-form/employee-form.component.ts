@@ -66,6 +66,7 @@ export class EmployeeFormComponent {
   submitForm() {
     if (this.employeeForm.valid) {
       this.formSubmitted.emit(this.employeeForm.value as Employee);
+      this.employeeForm.reset();
     }
   }
 }
