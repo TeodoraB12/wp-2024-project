@@ -6,6 +6,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-employee-form',
@@ -16,6 +17,7 @@ import { CommonModule } from '@angular/common';
     MatInputModule,
     MatRadioModule,
     MatButtonModule,
+    RouterModule
   ],
   templateUrl: './employee-form.component.html',
   styleUrls: ['./employee-form.component.css'],
